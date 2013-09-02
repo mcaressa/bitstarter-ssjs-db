@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>MCaressa Bitstarter - Tell Me Cicero </title>
+    <title>Tell Me Cicero - Live your travel to get the best of the place you're in</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">  
@@ -19,7 +19,7 @@
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
         padding-bottom: 40px;
-        color: #5a5a5a;
+        color: #222222;
         background-color:#1b1b1b;
       }
       .content{
@@ -30,20 +30,124 @@
         box-shadow: 0 0 0 4px rgba(208,213,203,0.3);
       }
       .heading, .subheading {
+        background-color: #EEEEEE;
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
       p.lead {
         padding-top: 1.5%;
-      font-size: 24px;
-      line-height: 30px;
+        font-size: 24px;
+        line-height: 30px;
       }
       p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px;
       }
+      .top-link {
+        line-height: 40px;
+        margin: 10px 0;
+        text-rendering: optimizelegibility;
+      }
+      .howitworks {
+         padding-top: 25px;
+         position: relative;
+      }
+      .howitworks:after {
+        background-color: #F5F5F5;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px 0 4px 0;
+        color: #9DA0A4;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 3px 7px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        content: "How does it works!";
+      }
+      .howitworks .step {
+        margin-bottom: 10px;
+      }     
+      .whoareyou {
+         padding-top: 25px;
+         position: relative;
+      }
+      .whoareyou:after {
+        background-color: #F5F5F5;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px 0 4px 0;
+        color: #9DA0A4;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 3px 7px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        content: "Who are you!";
+      }
+      .whoareyou .step {
+        margin-bottom: 10px;
+      }     
+      .whyisdifferent {
+         padding-top: 25px;
+         position: relative;
+      }
+      .whyisdifferent:after {
+        background-color: #F5F5F5;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px 0 4px 0;
+        color: #9DA0A4;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 3px 7px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        content: "Why is it different!";
+      }
+      .kickstart {
+         padding-top: 25px;
+         position: relative;
+      }
+      .kickstart:after {
+        background-color: #F5F5F5;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px 0 4px 0;
+        color: #9DA0A4;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 3px 7px;
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        content: "Kickstart!";
+      }
+      .textspace {
+         margin-right: 10px;
+      }
+      .textspace h5 {
+         margin-left: 0.5em;
+         display: inline;
+      }
+      .inline {
+        display: inline;
+      }
+     .stats-disclaimer {
+       color: #777777;
+       line-height: 10px;
+     }
+    .centered {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
 
-      /* CUSTOMIZE THE NAVBAR
+     /* CUSTOMIZE THE NAVBAR
       -------------------------------------------------- */
       /* Special class on .container surrounding .navbar, used for positioning it into place. */
       .navbar-wrapper {
@@ -53,12 +157,14 @@
         right: 0;
         z-index: 10;
         margin-top: 20px;
-        margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+/*        margin-bottom: -90px; */  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
       }
       .navbar-wrapper .navbar {
 
       }
-
+      .navbar-fixed-top {
+        top: 20px;
+      }
       /* Remove border and change up box shadow for more contrast */
       .navbar .navbar-inner {
         border: 0;
@@ -139,7 +245,6 @@
         margin-top: 10px;
       }
 
-
       /* MARKETING CONTENT
       -------------------------------------------------- */
       /* Center align the text within the three columns below the carousel */
@@ -152,35 +257,6 @@
       .marketing .span4 p {
         margin-left: 10px;
         margin-right: 10px;
-      }
-
-
-      /* Featurettes
-      ------------------------- */
-      .featurette-divider {
-        margin: 80px 0; /* Space out the Bootstrap <hr> more */
-      }
-      .featurette {
-        padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-        overflow: hidden; /* Vertically center images part 2: clear their floats. */
-      }
-      .featurette-image {
-        margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-      }
-
-      /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-      .featurette-image.pull-left {
-        margin-right: 40px;
-      }
-      .featurette-image.pull-right {
-        margin-left: 40px;
-      }
-      /* Thin out the marketing headings */
-      .featurette-heading {
-        font-size: 50px;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: -1px;
       }
 
       /* RESPONSIVE CSS
@@ -200,17 +276,6 @@
         .carousel img {
           width: auto;
           height: 500px;
-        }
-        .featurette {
-          height: auto;
-          padding: 0;
-        }
-        .featurette-image.pull-left,
-        .featurette-image.pull-right {
-          display: block;
-          float: none;
-          max-width: 40%;
-          margin: 0 auto 20px;
         }
        .linediv-l {
          border-right: 1px white solid;
@@ -253,13 +318,6 @@
         .marketing .span4 + .span4 {
           margin-top: 40px;
         }
-        .featurette-heading {
-          font-size: 30px;
-        }
-        .featurette .lead {
-          font-size: 18px;
-          line-height: 1.5;
-        }
        .copy {
          padding: 2.5% 10%;
        }
@@ -290,6 +348,9 @@
       }
 
       /* Marketing Copy and Footer */
+      .justify {
+        text-align:justify;
+      }
       .copy {
         padding-top: 2.5%;
         padding-bottom: 2.5%;
@@ -315,6 +376,7 @@
       }
     </style>
 
+    <!-- Google Analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-42843113-1']);
@@ -326,11 +388,11 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+
   </head>
 <body>
 
   <div class="container">
-
     <!-- NAVBAR
     =================== -->
     <div class="navbar-wrapper">
@@ -349,23 +411,14 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="/orders">Orders</a></li>
+<!--                <li><a href="#about">About</a></li>  -->
+<!--                <li><a href="/orders">Orders</a></li> -->
+                <li><a href="#whyisitdifferent">Why is it different</a></li>
+                <li><a href="#howdoesitwork">How does it work</a></li>
+                <li><a href="#whoareyou">Who are you</a></li>
+                <li><a href="#kickstart">Kickstart</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <!--
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-                -->
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -379,95 +432,213 @@
     <div id="mainCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-           <img src="http://i.imgur.com/IY9wUH9.jpg" alt="" title="Cala Rossa, Favignana Island, Sicily, Italy">
-           <div class="container">
-             <div class="carousel-caption">
-               <h1>Your travelmate to get the best of the place you're in</h1>
-               <p class="lead">Cala Rossa (Red Cove), Favignana Island, Sicily, Italy</br>Stories Tags: Nature,Hystory</p>
-               <a class="btn btn-large btn-primary" href="#">Read Stories</a>
-             </div> 
-           </div> 
-         </div> 
+          <img src="http://i.imgur.com/qkZl2av.jpg" alt="" title="Cala Rossa, Favignana Island, Sicily, Italy">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Live your travel to get the best of the place you're in</h1>
+              <p class="lead">Cala Rossa (Red Cove), Favignana Island, Sicily, Italy</br>Tags: Nature, Hystory</p>
+              <a class="btn btn-large btn-primary" href="#">Read Stories</a>
+            </div> 
+          </div> 
+        </div> 
         <div class="item">
-           <img src="http://i.imgur.com/PKHujgO.jpg" alt="" title="Castello Aragonese, Otranto, Apulia, Italy">
-           <div class="container">
-             <div class="carousel-caption">
-               <h1>Your travelmate to get the best of the place you're in</h1>
-               <p class="lead">Castle of Otranto, Otranto, Apulia, Italy</br>Stories Tags:  Hystory, Literature</p>
-               <a class="btn btn-large btn-primary" href="#">Read Stories</a>
-             </div> 
-           </div> 
-         </div> 
+          <img src="http://i.imgur.com/mjUMG4I.jpg" alt="" title="Castello Aragonese, Otranto, Apulia, Italy">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Live your travel to get the best of the place you're in</h1>
+              <p class="lead">Castle of Otranto, Otranto, Apulia, Italy</br>Tags: Hystory, Literature</p>
+              <a class="btn btn-large btn-primary" href="#">Read Stories</a>
+            </div> 
+          </div> 
+        </div> 
         <div class="item">
-           <img src="http://i.imgur.com/CHroH2x.jpg" alt="" title="Fontana del Vino, Piazza San Marco, Venice, Italy">
-           <div class="container">
-             <div class="carousel-caption">
-               <h1>Your travelmate to get the best of the place you're in</h1>
-               <p class="lead">Piazza San Marco,  Venice, Italy</br>Stories Tags: Architecture, Hystory</p>
-               <a class="btn btn-large btn-primary" href="#">Read Stories</a>
-             </div> 
-           </div> 
-         </div> 
-       </div> 
+          <img src="http://i.imgur.com/xxFXkoF.jpg" alt="" title="Piazza San Marco, Venice, Italy">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Live your travel to get the best of the place you're in</h1>
+              <p class="lead">Piazza San Marco,  Venice, Italy</br>Tags: Architecture, People</p>
+              <a class="btn btn-large btn-primary" href="#">Read Stories</a>
+            </div> 
+          </div> 
+        </div> 
+      </div> 
       <!-- Carousel nav -->
       <a class="carousel-control left" href="#mainCarousel" data-slide="prev"></a>
       <a class="carousel-control right" href="#mainCarousel" data-slide="next"></a> 
     </div> <!-- /.carousel -->
+  </div> <!-- /.container -->
 
-  </div>
+  <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+  <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+  <!-- http://stackoverflow.com/a/12270322 -->
+  <div class="container content">
 
-    <!-- Mobile-friendly navbar adapted from example.  
-    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Bitstarter</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="/orders">Orders</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse 
-        </div>
+    <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+    <!-- www.google.com/fonts/specimen/Ubuntu -->
+    <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+
+    <!-- Heading and subheading section
+    =================================== -->
+    <div class="row-fluid heading">
+      <div class="span12">
+        <!--
+        <h1>Tell Me Cicero</h1>
+       -->
+        <img alt="Tell Me Cicero" src="http://i.imgur.com/ayKeIDg.jpg"> 
+      </div>
+    </div> 
+    <div class="row-fluid subheading">
+      <div class="span12">
+        <!-- Special typography from Bootstrap for lead paragraph. -->
+        <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+        <p class="lead">Wherever you are, anyone can be your Cicero and you can be a Cicero for millions of people</p>
       </div>
     </div>
-    -->
 
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-    <!-- http://stackoverflow.com/a/12270322 -->
-    <div class="container content">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>Tell Me Cicero</h1>
+    <!-- "Why is it different" section
+    =================================== -->
+    <div id="whyisitdifferent" class="row-fluid pitch">
+      <div class="span5 offset1 justify">
+        <div class="alert alert-success whyisdifferent">
+          <p><strong>Why would I want another web travel-oriented service?</strong> You're already using <em>Foursquare</em>, <em>Tripadvisor</em>, <em>Virtualtourist</em> and many others. These services are great and <em>TellMeCicero</em> is not trying to compete with them. Therefore, you'll likely want to use <em>TellMeCicero</em> <strong>among</strong> the services that you're using now, <strong>non instead</strong>.
+          </p>
         </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Your travelmate to get the best of the place You're in</p>
+        <div class="alert alert-success">
+          <p><strong>TellMeCicero is based upon a very simple idea</strong>: wherever the place you're in, it would be nice to hear stories that bring to the foreground the informations which no one knows about. So:
+          </p>
         </div>
+        <div class="step textspace">
+          <span class="badge badge-success">1</span>
+          <div class="text inline"><strong>Isn't about finding</strong> places (eg. <em>Foursquare</em>). <strong>Is about discovering</strong> something unexpected when in place.</div>
+        </div>        
+        <div class="step textspace">
+          <span class="badge badge-success">2</span>
+          <div class="text inline"><strong>Isn't about planning</strong> your travel (eg. <em>Virtualtourist</em>). <strong>Is about living</strong> your travel experience moment by moment.</div>
+        </div>        
+        <div class="step textspace">
+          <span class="badge badge-success">3</span>
+          <div class="text inline"><strong>Isn't about reviewing</strong> hotels or restaurants (eg. <em>Tripadvisor</em>). <strong>Is about conveying</strong> travel stories and personal feelings about things that haven't really seen the light of day.</div>
+        </div>        
+        <a href="#">Top</a>       
       </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-	  <img class="img-polaroid" alt="Memento Travel Journal - Design by Natalie Uhing (http://www.smallestforest.net) " src="http://i.imgur.com/mM9O4XV.jpg" title="The reward for premium supporters. A Memento Travel Journal designed by Natalie Uhing (http://www.smallestforest.net)">
-        </div>
+      <div class="span5 video">
+        <img class="img-polaroid" alt="Live your travel with local stories and advices" src="http://i.imgur.com/lUggXKg.jpg" title="Live your travel with local stories and advices">     
+      </div>
+    </div>
 
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="row-fluid">
+    <!-- "How does it work" section
+    =================================== -->
+    <div id="howdoesitwork" class="row-fluid pitch">
+      <div class="span5 offset1">
+        <div class="alert alert-success howitworks justify">
+          <p><em>TellMeCicero</em> is both a web site and an innovative mobile app to bring the whole travel experience to a new level. <em>TellMeCicero</em> app provides <strong>augmented reality</strong> features and the infrastructure for people to <strong>"plant" in a location audio and text stories to be used by travelers and others</strong>. Unleash the power of augmented reality through three simple steps.
+          </p>
+        </div>
+        <div class="step textspace">
+          <span class="badge badge-success">1</span>
+          <h5>Check-in</h5><br>
+          <div class="text">Turn on <strong>GPS services</strong> on your device (smartphone, tablet and, pretty soon, Google Glass), launch <em>TellMeCicero app</em> and sign in.</div>
+        </div>        
+        <div class="step textspace">
+          <span class="badge badge-success">2</span>
+          <h5>Point and discover</h5><br>
+          <div class="text">Point your device around you and check for icons and graphic elements overlaying the screen.</div>
+        </div>        
+        <div class="step textspace">
+          <span class="badge badge-success">3</span>
+          <h5>Get stories and advices</h5><br>
+          <div class="text">Get along the way available audio and text stories provided by other travelers and locals, simply grabbing them from the screen.</div>
+        </div>
+        <a href="#">Top</a>       
+      </div>
+      <div class="span5 video">
+        <img class="img-polaroid" alt="check-in, point and discover, get stories and advices" src="http://i.imgur.com/KYNb4Lm.jpg" title="Check-in, Point and Discover, Get Stories...">
+<!--        <img class="img-polaroid" alt="Memento Travel Journal - Design by Natalie Uhing (http://www.smallestforest.net) " src="http://i.imgur.com/mM9O4XV.jpg" title="The reward for premium supporters. A Memento Travel Journal designed by Natalie Uhing (http://www.smallestforest.net)"> -->
+      </div>
+    </div>
+
+    <!-- "Who are you" - traveler section
+    =================================== -->
+    <div id="whoareyou" class="row-fluid pitch">
+      <div class="span5 offset1">
+        <div class="alert alert-success whoareyou justify">
+          <p><strong>As a traveler</strong>, we know that you want to experience the present moment of your travel. So you can:</p>
+        </div>
+        <div class="step textspace">
+          <span class="badge badge-success">1</span>
+          <div class="text inline"><strong>Record an audio story</strong> through <em>TellMeCicero app</em> and plant it in the place you're in by uploading to the <em>TellMeCicero cloud</em>. You can ask for an automatic text translation of your records via <em>speech-to-text</em> feature provided by <em>TellMeCicero platform</em>. </div>
+        </div>        
+        <div class="step textspace">
+          <span class="badge badge-success">2</span>
+          <div class="text inline"><strong>Share your stories and feelings about places</strong>, giving a valuable contribution to other travelers</div>
+        </div>        
+        <div class="step textspace">
+          <span class="badge badge-success">3</span>
+          <div class="text inline"><strong>Organize your multimedia travel memories</strong> (audio, post, pictures) through <em>TellMeCicero web site</em>, to compose your personal <strong>"memento travel journal"</strong></div>
+        </div>        
+      </div>
+      <div class="span5 video">
+        <img class="img-polaroid" alt="Memento Travel Journal - Design by Natalie Uhing (http://www.smallestforest.net) " src="http://i.imgur.com/mM9O4XV.jpg" title="The reward for premium supporters. An 'Analogic Memento Travel Journal' designed by Natalie Uhing (http://www.smallestforest.net)">
+      </div>
+    </div>
+
+    <!-- "Who are you" - local section
+    =================================== -->
+    <div id="whoareyou" class="row-fluid pitch">
+      <div class="span5 offset1">
+        <div class="alert alert-success justify">
+          <p><strong>As a local</strong>, we know that you are the best Cicero of your area. So you can:</p>
+        </div>
+        <div class="step textspace">
+          <span class="badge badge-success">1</span>
+          <div class="text inline"><strong>Record and post stories about your birthplace</strong> or the place where you live.</div>
+        </div>        
+        <div class="step textspace">
+          <span class="badge badge-success">2</span>
+          <div class="text inline"><strong>Build alternative travel patterns about your place</strong>, organizing your contributions through <em>TellMeCicero web site</em>.</div>
+        </div>        
+        <div class="step textspace">
+          <span class="badge badge-success">3</span>
+          <div class="text inline"><strong>Share 'em all</strong> and make available to other people.</div>
+        </div>        
+        <a href="#">Top</a>       
+      </div>
+      <div class="span5 video">
+        <img class="img-polaroid" alt="Rock church at the bottom of the Matera canyon" src="http://i.imgur.com/ooIzjut.jpg" title="This medieval rock church at the bottom of a canyon in Matera, Italy, is outside from the classical touristic routes and could be explained well only by local people">
+      </div>
+    </div>
+
+
+    <!-- Beyond this part the marketing copy begins. -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+    <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+    <!-- http://placehold.it -->
+
+    <!--"Kickstart" section
+    =================================== -->
+    <div class="row-fluid pitch">
+      <div id="kickstart" class="span5 offset1 justify">
+        <div class="alert alert-warning kickstart">
+          <p>
+            <em>TellMeCicero</em> is natively <a href="#contact">our</a> final project for the <a href="https://www.coursera.org/course/startup">Startup Engineering MOOC</a>, delivered by <a href="http://www.stanford.edu">Stanford University</a> on <a href="https://www.coursera.org">Coursera</a> Web Platform, <strong>but we intend to make it a reality through a further crownfunding campaign</strong>. Get more detailed info inside the <a href="#faq">FAQ</a> section.  
+         </p>
+        </div>
+        <div class="alert alert-warning">
+          <p>
+            Also do not be shy about <strong>spreading the word</strong> about <em>TellMeCicero</em>, just use the social button on the right. 
+          </p>
+        </div>
+        <div class="alert alert-warning">
+          <p>
+             Donate Bitcoins (on right) and <strong>become an early adopter</strong> of the service to help <em>TellMeCicero</em> reach its funding target of 2,000 BTC!   
+          </p>
+        </div>
+        <a href="#">Top</a>       
+      </div>
+
+      <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+      <div class="span5 actions">
+        <div class="row-fluid">
           <div class="span8 offset2">
             <div class="row-fluid statistics">
               <div class="span4">
@@ -475,152 +646,227 @@
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                  <h3>2</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>0 BTC</h3> <p>of 2,000 BTC</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                  <h3>8</h3> <p>days left</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="row-fluid">
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+            <div class="span10 offset1">
+              <!-- Bootstrap progress bar -->
+              <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+              <div class="thermometer progress active">
+                <div class="bar bar-success" style="width: 60%;"></div>
+                <div class="bar bar-warning" style="width: 40%;"></div>
+              </div>
+              <div class="stats-disclaimer">
+                <div class="span12 centered">
+                  (Updated daily)
+                </div>
+              </div>
             </div>
           </div>
-          </div>
           <div class="row-fluid">
-          <div class="span6 offset3 order">
+            <div class="span6 offset3 order">
+              <a class="coinbase-button" data-code="56be80b08e7e302f94f31552c4e60fa9" data-button-style="donation_large" data-button-text="Donate Bitcoins" href="https://coinbase.com/checkouts/56be80b08e7e302f94f31552c4e60fa9">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+
+<!--
 	    <a class="coinbase-button" data-button-style="custom_large" data-button-text="Preorder with Bitcoin" data-code="13b56883764b54e6ab56fef3bcc7229c" href="https://coinbase.com/checkouts/13b56883764b54e6ab56fef3bcc7229c">Preorder with Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-	  </div>
+-->
+            </div>
           </div>
           <div class="row-fluid">
-          <div class="span8 offset2 social">
-            <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-              <a class="addthis_button_preferred_1"></a>
-              <a class="addthis_button_preferred_2"></a>
-              <a class="addthis_button_compact"></a>
-              <a class="addthis_counter addthis_bubble_style"></a>
+            <div class="span8 offset2 social">
+              <!-- AddThis Button BEGIN -->
+              <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_preferred_2"></a>
+                <a class="addthis_button_compact"></a>
+                <a class="addthis_counter addthis_bubble_style"></a>
+              </div>
+              <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>  
+  	      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51e5f5d9549fdf9b"></script>
+              <!-- AddThis Button END -->
             </div>
-	     <script type="text/javascript">var addthis_config = 
-	      {"data_track_addressbar":true};</script>
-	     <script type="text/javascript" 
- 		     src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51e5f5d9549fdf9b"></script>
-            <!-- AddThis Button END -->
-          </div>
           </div>
         </div>
-        </div>
       </div>
-
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-        <div class="span5 copy">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
+<!--
+      <div class="span5 asset">
+        <img class="img-polaroid" src="http://placehold.it/480x300">
       </div>
+-->
+    </div>
 
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-      </div>
-
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
+    <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+    <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+    <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+    <div id="faq" class="row-fluid">
+      <div class="span4 offset1"><h3>FAQ</h3></div>
+    </div>
+    <div class="row-fluid faq">
+        <div class="span10 offset1">
+<!--            <h3>FAQ</h3><a href="#">Top</a> -->
+          <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
-                </div>
+                  What is <em>TellMeCicero</em>?
+                </a>
               </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <em>TellMeCicero</em> is both a web site and an innovative mobile app which provides augmented reality features, to bring the whole travel experience to a new level.
                 </div>
               </div>
             </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseTwo">
+                  Will it be free a service?
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <em>TellMeCicero</em> will be 100% free for ever and ever
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseThree">
+                  What is the Stack?
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  We are OSS believers. <em>TellMeCicero</em> will be built on top of the technologies that are freely available to us today.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseFour">
+                  Why support us?
+                </a>
+              </div>
+              <div id="collapseFour" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <a href="#kickstart">Donating Bitcoins</a>, or even simply <a href="#kickstart">spreading the word via Twitter or Facebook sharing</a> is the way for you to help make this project a reality. I will definitely be needing help from people to build a MVP (Minimum Viable Product) for the project and manage the startup launch. Without your support and donations, there isn't really a way for us to make that happen. All of you who will contribute will be contacted to become early adopters before the official go live. A thing to keep in mind is that the rewards will be bragging rights recognition, a way for you to help make the project a reality.  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseFive">
+                  Why Bitcoin payments?
+                </a>
+              </div>
+              <div id="collapseFive" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  A <a href="http://en.wikipedia.org/wiki/Paypal" target="_blank">Paypal</a> donation button is forthcoming, but we prefer <a href="http://en.wikipedia.org/wiki/Bitcoins" target="_blank"> Bitcoin</a> payments. We believe Bitcoin is the <a href="http://bitcoin.org" target="_blank">currency of the future</a> and you can consult <a href="http://howtobuybitcoins.info" target="_blank">this page</a> to learn how to buy BitCoins in your country.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseSix">
+                  Why 2000 BTC?
+                </a>
+              </div>
+              <div id="collapseSix" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  While I can put together a prototype on my own, I certainly can't build entirely <em>TellMeCicero</em> web site and mobile app in any reasonable amount of time by myself. The more money we get, the larger the team I can put together to turn this stuff into a reality. The 2k BTC, after taxes and cost, will help us at least assemble a small but smart team to launch first release of the system.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseSeven">
+                  Does more funding mean more stuff?
+                </a>
+              </div>
+              <div id="collapseSeven" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Sure! I can hire a bigger and more diverse team so that we can add support for more features and even cooler things than I've shown in the presentation (e.g. a tourist booklet generated with stories of the place you're planning to visit and much more)
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseEight">
+                  How long will it take?
+                </a>
+              </div>
+              <div id="collapseEight" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  The tentative plan is to release a full beta within 4 months and have an official launch April of next year. As it stands currently, it will include all the things I've shown in the presentation, included the augmented reality mobile app, but should we continue to get more funding we can add even more.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseNine">
+                  Why should we believe you can deliver?
+                </a>
+              </div>
+              <div id="collapseNine" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  I've been programming professionally for more than 20 years, during which time I've worked on information retrieval, content, document and knowledge management, built websites and portals large and small, delivering content and services both in internet and intranet environment and released libraries and frameworks (one of these, Web@Work, was recognized by Oracle as Award Winning solution as a CMS entirely built in PL/SQL and completely embeddable into the DBMS).
+I have a hystory of building useful software and, as <a href="http://www.pmi.org/Certification/Project-Management-Professional-PMP.aspx" target="_blank">PMP</a>, of managing large ICT projects as well as experience leading and shaping the future of a rapidly growing startup :-)
+                </div>
+              </div>
+            </div>
+
           </div>
-
-      </div>
-
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
         </div>
+
+    </div>
+    <div class="row-fluid">
+      <div class="span12 offset1">
+        <a href="#">Top</a>       
       </div>
     </div>
+
+    <!-- Contact 
+    ==========================-->
+    <div id="contact" class="row-fluid">
+      <div class="span12 offset1"><h3>Contact</h3></div>
+      <div class="span4 offset1"><a href="http://about.me/marcocaressa" target="_blank">Here we are</a></div>
+    </div>
+
+
+    <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+    <!-- http://creativecommons.org/licenses/ -->
+    <div class="row-fluid footer">
+      <div class="span12">
+        <p>This work is licensed under
+          the <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC
+            By-SA 3.0
+          </a>, without all the cruft that would otherwise be
+          put at the bottom of the page.</p>
+      </div>
+    </div>
+  </div> <!-- ,/container -->
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
